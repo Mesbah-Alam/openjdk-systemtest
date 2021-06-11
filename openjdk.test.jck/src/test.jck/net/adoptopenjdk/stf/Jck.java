@@ -313,6 +313,8 @@ public class Jck implements StfPluginInterface {
 		}
 		
 		fileContent += "set jck.excludeList.customFiles \"" + initialJtxFullPath + " " + jtxFullPath + " " + kflFullPath + "\"" + ";\n";
+		
+		logger.info("set jck.excludeList.customFiles =  " + "set jck.excludeList.customFiles \"" + initialJtxFullPath + " " + jtxFullPath + " " + kflFullPath + "\"" + ";\n");
 		fileContent += "runTests" + ";\n";
 		fileContent += "writeReport -type xml " + reportDir + ";\n";
 		
